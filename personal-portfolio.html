@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light pt-5 fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills & Tools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <section id="home" class="section d-flex align-items-center mt-5">
+        <div class="home container">
+          <div class="row">
+              <div class="col-md-6">
+                <div class="container d-flex flex-column justify-content-center">
+                  <h3>Hi !</h3>
+                  <h1>I'm M. Febrin Dafian</h1>
+                  <div class="container pl-0">
+                    <h2><span class="text first-text">And I'm a </span> <span class="text sec-text"> Web developer</span> </span></h2>
+                  </div>
+                  <p>Welcome to my portfolio website! I'm a passionate web developer with experience in PHP Language</p>
+                  <div class="mt-4 d-flex">
+                    <a href="#" class="btn btn-sm btn-download">Download CV</a>
+                  </div>
+                </div>
+              </div>
+            <div class="col-md-6"> 
+              <div class="container d-flex align-items-center justify-content-center">
+                <img src="logo.png" alt="Profile Image" class="logo-img" />        
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    <section id="about" class="section">
+        <div class="about container justify-content-center">
+          <div class="d-flex justify-content-center">
+            <h2>About Me</h2>
+          </div>
+        <div class="row">
+          <div class="d-flex col-md-6 align-items-center justify-content-center">
+            <img src="profile.png" alt="Profile Image" class="profile-img" />
+          </div>
+          <div class="d-flex flex-column col-md-6 justify-content-center">
+            <p class="about-text">     
+I am a passionate web developer with expertise in web design, UI/UX, front-end and back-end development, specializing in CodeIgniter Framework with PHP and database development. I have a solid understanding of SCRUM development methodology for efficient project management. My goal is to create user-friendly and functional websites, constantly enhancing my skills through learning and exploring new technologies. This portfolio showcases my selected projects from my academic journey, internships, and freelance work.
+            </p>
+        </div>
+        </div>
+        </div>
+      </section>
+      
+
+    <!-- Skills & Tools Section -->
+    <section id="skills" class="section">
+      <div class="container skills-list">
+        <div class="d-flex justify-content-center">
+          <h2>Skills & Tools</h2>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <ul class="shape-list-1">
+              <li>PHP</li>
+              <li>CODEIGNITER 4</li>
+              <li>JAVASCRIPT</li>
+              <li>MYSQL</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="shape-list-2">
+              <li>SCRUM</li>
+              <li>GIT</li>
+              <li>API</li>
+              <li>VISUAL STUDIO CODE</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="shape-list-3">
+              <li>FIGMA</li>
+              <li>BALSAMIQ</li>
+              <li>ADOBE XD</li>
+              <li>PHOTOSHOP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+<!-- Projects Section -->
+<section id="projects" class="section d-flex align-items-center">
+  <div class="container">
+    <div class="d-flex justify-content-center mb-3">
+      <h2>Projects</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card">
+          <img src="project1.png" class="card-img-top" alt="Project 1" />
+          <div class="card-body">
+            <h5 class="card-title">Daily Employee Reporting System</h5>
+            <p class="card-text">Web-based application used by employees of the Jambi Provincial Central Statistics Agency to manage their daily activities</p>
+            <a href="#" class="btn btn-primary btn-projects">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card">
+          <img src="project2.png" class="card-img-top" alt="Project 2" />
+          <div class="card-body">
+            <h5 class="card-title"> Integrated News and Article Management System</h5>
+            <p class="card-text">Web-based application used to manage various news articles from employees of the Jambi Provincial Central Statistics Agency</p>
+            <a href="#" class="btn btn-primary btn-projects">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="card">
+          <img src="project3.png" class="card-img-top" alt="Project 3" />
+          <div class="card-body">
+            <h5 class="card-title">State-owned Inventory Information System</h5>
+            <p class="card-text">Web-based application used to manage all records of state-owned assets managed</p>
+            <a href="#" class="btn btn-primary btn-projects">Learn More</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="other-project col-md-3 d-flex justify-content-center">
+      <div class="card">
+        <img src="project1.png" class="card-img-top" alt="Project 4" />
+        <div class="card-body">
+          <h5 class="card-title">Response time feature</h5>
+          <a href="#" class="btn btn-primary btn-projects">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="other-project col-md-3 d-flex justify-content-center">
+      <div class="card">
+        <img src="project2.png" class="card-img-top" alt="Project 5" />
+        <div class="card-body">
+          <h5 class="card-title">Hospital management application</h5>
+          <a href="#" class="btn btn-primary btn-projects">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="other-project col-md-3 d-flex justify-content-center">
+      <div class="card">
+        <img src="project3.png" class="card-img-top" alt="Project 6" />
+        <div class="card-body">
+          <h5 class="card-title">Clinic management application</h5>
+          <a href="#" class="btn btn-primary btn-projects">Learn More</a>
+        </div>
+      </div>
+  </div>
+  <div class="other-project col-md-3 d-flex justify-content-center">
+    <div class="card">
+      <img src="project2.png" class="card-img-top" alt="Project 7" />
+      <div class="card-body">
+        <h5 class="card-title">Futsal booking aplication</h5>
+        <a href="#" class="btn btn-primary btn-projects">Learn More</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+ 
+</section>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <h4>Get In Touch</h4>
+            <p>If you have any questions or inquiries, feel free to contact me using the form on the left or through the following channels:</p>
+            <ul>
+              <li>Email: john.doe@example.com</li>
+              <li>Phone: 123-456-7890</li>
+              <li>Address: 123 Main St, City, Country</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

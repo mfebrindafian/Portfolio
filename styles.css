@@ -1,0 +1,337 @@
+/* Add your custom styles here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet');
+
+/* tambahkan CSS berikut */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f7eb;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.navbar {
+  background-color: transparent !important;
+  transition: top 0.3s;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #000;
+  font-weight: 500;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #5b0000;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 40px;
+}
+
+.navbar-scrolled {
+  top: -100px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.section.active .navbar {
+  font-weight: bold; /* Membuat teks navbar menjadi menebal */
+  background-color: #5b0000; /* Ganti "your-color" dengan warna yang diinginkan */
+}
+
+.profile-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* pengaturan card */
+.card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f8f7eb;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 350px; /* Lebar absolut card */
+  height: 400px; /* Tinggi absolut card */
+}
+
+.other-project .card {
+  background-color: #f8f7eb;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px; /* Lebar absolut card */
+  height: auto; /* Tinggi absolut card */
+}
+
+.card:hover {
+  background-color: #5b0000;
+  color: #fff;
+}
+
+.other-project .card-img-top {
+  height: auto;
+  object-fit: cover;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.card-body {
+  position: relative;
+}
+
+.card-body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card-body:hover p {
+  bottom: 50px;
+  opacity: 1;
+}
+
+.card-body:hover:before {
+  opacity: 0.9;
+  background-color: rgba(78, 78, 78, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.btn-projects {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: bottom 0.3s, opacity 0.3s;
+}
+
+.card-body:hover .btn {
+  bottom: 80px;
+  opacity: 1;
+}
+
+.card-text {
+  font-size: small;
+  margin-top: 20px;
+}
+
+/* batas pengaturan card */
+
+.btn-download {
+  background-color: transparent;
+  background-color: #5b0000;
+  border-color: #5b0000;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  /* tambahkan gaya lainnya yang diperlukan */
+}
+
+.btn-download:hover {
+  background-color: transparent;
+  background-color: #ff7300;
+  border-color: #fff;
+  /* tambahkan gaya lainnya yang diperlukan */
+}
+
+.home.container .text {
+  position: relative;
+  color: #000;
+  overflow: hidden;
+}
+
+.text.sec-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid #000;
+  background-color: #f8f7eb;
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+.about {
+  margin-top: 100px;
+}
+.about .row {
+  margin-top: 40px;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #000;
+}
+
+.skills-list ul {
+  list-style: none;
+  padding: 0;
+}
+.skills-list ul li {
+  font-weight: 500;
+  transition: transform 0.2s;
+}
+
+.skills-list ul li:hover {
+  transform: scale(1.1);
+}
+
+.skills-list ul li:hover {
+  background-color: #ff7300;
+}
+
+.shape-list-1 li {
+  background-color: #5b0000;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.shape-list-2 li {
+  background-color: #ffde59;
+  color: #000;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.shape-list-3 li {
+  background-color: #000;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#home {
+  margin-top: 200px !important;
+}
+
+.logo-img {
+  max-width: 20%;
+  height: auto;
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.logo-img {
+  animation: logoAnimation 5s infinite;
+}
+
+.home h3 {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.home h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.home h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 20px 0;
+  }
+  .navbar {
+    position: relative;
+    padding: 20px;
+  }
+
+  #home {
+    margin-top: 0px !important;
+  }
+
+  #about {
+    margin-top: 0px !important;
+  }
+
+  .btn-download {
+    background-color: transparent;
+    background-color: #5b0000;
+    border-color: #5b0000;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 0px;
+    /* tambahkan gaya lainnya yang diperlukan */
+  }
+
+  .profile-img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .logo-img {
+    display: none;
+  }
+  .home h3 {
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  .home h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .home h2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .home p {
+    font-size: 13px;
+    font-weight: 200;
+  }
+
+  .about-text {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #000;
+  }
+}
